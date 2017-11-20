@@ -15,6 +15,10 @@ set wildmenu
 color dracula
 
 set number " отображает номер строки
+set hlsearch " подсвечивает все совпадения при поиске
+
+highlight OverLength ctermbg=red ctermfg=white 
+match OverLength /\%111v.\+/
 
 nmap <leader>l :set list!<CR> "показать скрытые символы
 set listchars=tab:▸\ ,eol:¬ "отображение символов табуляции и переноса строки
